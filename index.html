@@ -1,25 +1,148 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <title>Valentina</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/413995fece.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/styles.css">
-  </head>
+<title>Valentina</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("assets/8f8c8c15bcc3ff766bd156a1c5bede42-6946.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
 <body>
-  <section id="title">
-    <div class="container-fluid">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">VALENTINA</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#idea" class="w3-bar-item w3-button">DATE IDEAS</a>
       
-<!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg  navbar-dark">
-        <a class="navbar-brand" href="">Valentina</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-            
+    </div>
+   
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#idea" onclick="w3_close()" class="w3-bar-item w3-button">DATE IDEAS</a>
+  
+</nav>
+
+<!-- Header with image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+   
+  </div> 
+</header>
+
+
+<!--Section - "We know you" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>This is the ultimate place to decide your dating options</h3>
+      <p>you might be looking for places to get a decent date</p>
+      <p><a href="" class="w3-button w3-black">Get Started</a></p>
+      
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="assets/download.jpg" alt="love" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- option Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">choose.your.option</h3>
+  <p class="w3-center w3-large">choose your favorite things</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="assets/kofi.jpg" alt="place" style="width:100%">
+        <div class="w3-container">
+          <h3>places</h3>
+          <p class="w3-opacity">best date places</p>
+          <p>Setting the mood coulnt be better</p>
+          <p><button class="w3-button w3-light-grey w3-block">search</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="assets/pepperoni-pizza-dip-1668876454.jpg" alt="food" style="width:100%">
+        <div class="w3-container">
+          <h3>food</h3>
+          <p class="w3-opacity">best things to munch on</p>
+          <p>Treat your mind to the fullest</p>
+          <p><button class="w3-button w3-light-grey w3-block">search</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="assets/asset_804_transformation_2258_720x_ca8945ad-b394-47b0-833c-c8c5f2c02d53_600x.webp" alt="gift" style="width:100%">
+        <div class="w3-container">
+          <h3>gifts</h3>
+          <p class="w3-opacity">get the best gifts</p>
+          <p>Do not miss out on the art of gifting!</p>
+          <p><button class="w3-button w3-light-grey w3-block">search</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="assets/1402590917.jpg" alt="paisa" style="width:100%">
+        <div class="w3-container">
+          <h3>something else?</h3>
+          <p class="w3-opacity">maybe money?</p>
+          <p>For non materialistic, creative individuals</p>
+          <p><button class="w3-button w3-light-grey w3-block">search</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- last Section -->
+<div class="w3-container w3-light-grey" style="padding:20px 16px" id="contact" align="center">
+  <h3 class="w3-center">Hope that your date turns out good</h3>
+  <p class="w3-center w3-large">Wishing you all the best for your date</p>
+  <div style="margin-top:48px">
+    
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>ah man, here we go again</a>
+  
+</footer>
+</body>
+</html>
